@@ -12,7 +12,7 @@ if (isGithubActions) {
 
 module.exports = {
   assetPrefix: assetPrefix,
-  basePath: basePath,
+  basePath: '/nextjs',
   output: 'export',
   // images: {
   //   loader: 'imgix',

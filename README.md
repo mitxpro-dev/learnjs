@@ -4,12 +4,14 @@
 
 ## Getting Started
 
-Use the right version of node
+Use the right version of node.  
+
+> This project includes a `.nvmrc` file that specifies the version of node to use.  If you have `nvm` installed, you can run the following command to use the correct version of node:
 
 ```bash
 nvm use
 ```
-Install dependencies
+Install dependencies. 
 
 ```bash
 npm install

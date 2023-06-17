@@ -18,7 +18,7 @@ export default function Home() {
           >
             By{' '}
             <img
-              src="https://mitx-pro.github.io/nextjs/vercel.svg"
+              src="https://mitxpro-dev.github.io/nextjs/vercel.svg"
               alt="Vercel Logo"
               className={styles.vercelLogo}
               width={100}
@@ -31,7 +31,7 @@ export default function Home() {
       <div className={styles.center}>
         <img
           className={styles.logo}
-          src="https://mitx-pro.github.io/nextjs/next.svg"
+          src="https://mitxpro-dev.github.io/nextjs/next.svg"
           alt="Next.js Logo"
           width={180}
           height={37}

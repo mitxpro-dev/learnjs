@@ -17,3 +17,7 @@ Issue: #<issue number if applicable>
 [Add screenshots here]
 
 </details>
+
+# Notes
+
+<Add any additional notes here>

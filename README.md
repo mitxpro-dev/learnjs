@@ -37,7 +37,7 @@ Example:
 ```
 <Image
   className={styles.logo}
-  src="https://mitxpro-dev.github.io/nextjs/next.svg"
+  src="https://mitxpro-dev.github.io/learnjs/next.svg"
   alt="Next.js Logo"
   width={180}
   height={37}

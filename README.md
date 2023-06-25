@@ -1,26 +1,27 @@
 # MIT X-PRO Development Group
 
- > Next.js Project
+> Next.js Project
 
 ## Getting Started
 
-Use the right version of node.  
+Use the right version of node and install [pnpm](https://pnpm.io/).
 
-> This project includes a `.nvmrc` file that specifies the version of node to use.  If you have `nvm` installed, you can run the following command to use the correct version of node:
+> This project includes a `.nvmrc` file that specifies the version of node to use. If you have `nvm` installed, you can run the following command to use the correct version of node:
 
 ```bash
 nvm use
 ```
-Install dependencies. 
+
+Install dependencies.
 
 ```bash
-npm install
+pnpm install
 ```
 
 Run the development server:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -32,6 +33,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 Since this repo is currently deploying to `gh-pages`, assets must be placed in the `/public` folder and `src` should use the full url.
 
 Example:
+
 ```
 <Image
   className={styles.logo}
@@ -54,8 +56,3 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-
-
-
-

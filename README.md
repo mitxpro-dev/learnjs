@@ -1,4 +1,4 @@
-# MIT X-PRO Development Group
+# Learn JS
 
 > Next.js Project
 

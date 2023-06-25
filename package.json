@@ -10,14 +10,23 @@
     "export": "next export"
   },
   "dependencies": {
+    "@chakra-ui/next-js": "^2.1.4",
+    "@chakra-ui/react": "^2.7.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
+    "date-fns": "^2.30.0",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
+    "framer-motion": "^10.12.17",
+    "lodash": "^4.17.21",
     "next": "13.4.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-markdown": "^8.0.7",
     "typescript": "5.1.3"
   }
 }

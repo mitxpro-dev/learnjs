@@ -23,9 +23,9 @@ jobs:
 
       - name: Build
         run: |
-          npm ci
-          npm run build
-          npm run export
+          pnpm install
+          pnpm run build
+          pnpm run export
           touch out/.nojekyll
 
       - name: Deploy

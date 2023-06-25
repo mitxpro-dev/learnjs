@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-Use the right version of node and install [pnpm](https://pnpm.io/).
+Use the right version of node and install [nvm](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/).
 
 > This project includes a `.nvmrc` file that specifies the version of node to use. If you have `nvm` installed, you can run the following command to use the correct version of node:
 
@@ -15,13 +15,13 @@ nvm use
 Install dependencies.
 
 ```bash
-pnpm install
+npm install
 ```
 
 Run the development server:
 
 ```bash
-pnpm run dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

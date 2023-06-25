@@ -1,4 +1,4 @@
-<Update /.github/pull_request_template.md to change this template>
+<Update pull_request_template.md to change this template>
 <Delete any sections below that are not applicable>
 
 # Description

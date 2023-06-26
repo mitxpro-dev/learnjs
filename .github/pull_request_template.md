@@ -14,7 +14,7 @@ Issue: #<issue number if applicable>
 <details>
  <summary>Click here for screenshots</summary>
 
-[Add screenshots here]
+<Add screenshots here>
 
 </details>
 

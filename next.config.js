@@ -13,5 +13,6 @@ if (isGithubActions) {
 module.exports = {
   assetPrefix: assetPrefix,
   basePath: basePath,
+  trailingSlash: true,
   output: 'export',
 }

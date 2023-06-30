@@ -1,11 +1,32 @@
 'use client'
-import { Heading, Text, VStack } from '@chakra-ui/react'
+import { Heading, Text, Box } from '@chakra-ui/react'
 
 export default function Home() {
+  const outerBoxStyles = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100vw',
+    height: '90vh',
+    p: '25',
+    background:
+      'url(https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80) center/cover no-repeat',
+  }
+
+  const innerBoxStyles = {
+    justify: 'center',
+    textAlign: 'center',
+    color: 'white',
+  }
+
   return (
-    <VStack justify='center' h='100vh'>
-      <Heading>JS Learning Site</Heading>
-      <Text>Learn practical coding skills by solving real-world problems.</Text>
-    </VStack>
+    <Box sx={outerBoxStyles}>
+      <Box sx={innerBoxStyles}>
+        <Heading>JS Learning Site</Heading>
+        <Text>
+          Learn practical coding skills by solving real-world problems.
+        </Text>
+      </Box>
+    </Box>
   )
 }

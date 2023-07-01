@@ -45,7 +45,7 @@ export const Navigation = () => {
   return (
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} position='fixed' px={4} w='100%' maxW='1440px'>
-        <Flex h={10} alignItems={'center'} justifyContent={'space-between'}>
+        <Flex h={12} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
             icon={

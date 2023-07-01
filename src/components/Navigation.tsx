@@ -44,8 +44,8 @@ export const Navigation = () => {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} position='fixed' px={4} w='100%'>
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} position='fixed' px={4} w='100%' maxW='1440px'>
+        <Flex h={10} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
             icon={
@@ -64,7 +64,7 @@ export const Navigation = () => {
             aria-label={'Navigation menu'}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box>Learn JS</Box>
+            <Box fontWeight='bold'>Learn JS</Box>
             <HStack
               as={'nav'}
               spacing={4}

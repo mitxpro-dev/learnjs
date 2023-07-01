@@ -44,7 +44,8 @@ export const Navigation = () => {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} position='fixed' px={4} w='100%' maxW='1440px'>
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} position='fixed' px={4} w='100%'>
+        <Box maxW='1440px' margin='auto'>
         <Flex h={12} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -87,6 +88,7 @@ export const Navigation = () => {
             </Stack>
           </Box>
         ) : null}
+        </Box>
       </Box>
     </>
   )

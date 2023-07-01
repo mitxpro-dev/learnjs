@@ -1,5 +1,5 @@
 'use client'
-import { Heading, Text, Box, VStack } from '@chakra-ui/react'
+import { Box, Heading, Text, VStack } from '@chakra-ui/react'
 
 export default function About() {
   return (

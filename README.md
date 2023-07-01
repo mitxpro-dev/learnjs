@@ -71,8 +71,7 @@ Example:
 
 ## Learn More
 
-This is a Next.js project bootstrapped with create-next-app.
-
+- [Branch Name Conventions](https://dev.to/varbsan/a-simplified-convention-for-naming-branches-and-commits-in-git-il4)
 - [Project Structure](https://nextjs.org/docs/getting-started/project-structure)
 - [Deploy on GH Pages](https://www.viget.com/articles/host-build-and-deploy-next-js-projects-on-github-pages/)
 - This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.

@@ -17,10 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className} style={{ maxWidth: '1440px', margin: 'auto'}}>
+      <body className={inter.className}>
         <Providers>
           <Navigation />
-          {children}
+          <div style={{ maxWidth: '1440px', margin: 'auto'}}>
+            {children}
+          </div>
           <Footer />
         </Providers>
       </body>

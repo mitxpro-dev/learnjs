@@ -20,7 +20,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <Navigation />
-          {children}
+          <div style={{ maxWidth: '1440px', margin: 'auto'}}>
+            {children}
+          </div>
           <Footer />
         </Providers>
       </body>

@@ -26,7 +26,7 @@ const aboutContent: AboutSection[] = [
 
 export default function About() {
   return (
-    <VStack px='4' py='16' gap='6'>
+    <VStack px='4' py='16' gap='6' maxW='1440px' m='auto'>
       <Heading display='flex' justifyContent='center'>
         About Learn JS
       </Heading>

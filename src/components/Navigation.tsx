@@ -1,20 +1,18 @@
-'use client'
-
+import { NavLink } from '@/components/NavLink'
 import {
   Box,
+  Button,
   Flex,
   HStack,
   IconButton,
-  Button,
-  useDisclosure,
+  Stack,
   useColorMode,
   useColorModeValue,
-  Stack,
+  useDisclosure,
 } from '@chakra-ui/react'
-import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs'
+import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { VscClose } from 'react-icons/vsc'
-import { NavLink } from './NavLink'
 
 const links = [
   {
@@ -44,50 +42,55 @@ export const Navigation = () => {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} position='fixed' px={4} w='100%'>
+      <Box
+        bg={useColorModeValue('gray.100', 'gray.900')}
+        position='fixed'
+        px={4}
+        w='100%'
+      >
         <Box maxW='1440px' margin='auto'>
-        <Flex h={12} alignItems={'center'} justifyContent={'space-between'}>
-          <IconButton
-            size={'md'}
-            icon={
-              isOpen ? (
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                  <VscClose />
-                </div>
-              ) : (
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                  <RxHamburgerMenu />
-                </div>
-              )
-            }
-            display={{ md: 'none' }}
-            onClick={isOpen ? onClose : onOpen}
-            aria-label={'Navigation menu'}
-          />
-          <HStack spacing={8} alignItems={'center'}>
-            <Box fontWeight='bold'>Learn JS</Box>
-            <HStack
-              as={'nav'}
-              spacing={4}
-              display={{ base: 'none', md: 'flex' }}
-            >
-              {renderNavLinks(links)}
+          <Flex h={12} alignItems={'center'} justifyContent={'space-between'}>
+            <IconButton
+              size={'md'}
+              icon={
+                isOpen ? (
+                  <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <VscClose />
+                  </div>
+                ) : (
+                  <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <RxHamburgerMenu />
+                  </div>
+                )
+              }
+              display={{ md: 'none' }}
+              onClick={isOpen ? onClose : onOpen}
+              aria-label={'Navigation menu'}
+            />
+            <HStack spacing={8} alignItems={'center'}>
+              <Box fontWeight='bold'>Learn JS</Box>
+              <HStack
+                as={'nav'}
+                spacing={4}
+                display={{ base: 'none', md: 'flex' }}
+              >
+                {renderNavLinks(links)}
+              </HStack>
             </HStack>
-          </HStack>
-          <Flex alignItems={'center'}>
-            <Button onClick={toggleColorMode}>
-              {colorMode === 'light' ? <BsFillMoonFill /> : <BsFillSunFill />}
-            </Button>
+            <Flex alignItems={'center'}>
+              <Button onClick={toggleColorMode}>
+                {colorMode === 'light' ? <BsFillMoonFill /> : <BsFillSunFill />}
+              </Button>
+            </Flex>
           </Flex>
-        </Flex>
 
-        {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
-            <Stack as={'nav'} spacing={4}>
-              {renderNavLinks(links)}
-            </Stack>
-          </Box>
-        ) : null}
+          {isOpen ? (
+            <Box pb={4} display={{ md: 'none' }}>
+              <Stack as={'nav'} spacing={4}>
+                {renderNavLinks(links)}
+              </Stack>
+            </Box>
+          ) : null}
         </Box>
       </Box>
     </>

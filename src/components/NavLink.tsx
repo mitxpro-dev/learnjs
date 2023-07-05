@@ -1,4 +1,3 @@
-'use client'
 import { Link } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 import { Link as RouterLink } from 'react-router-dom'

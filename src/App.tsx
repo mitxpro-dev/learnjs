@@ -1,9 +1,9 @@
+import RootLayout from '@/RootLayout'
+import Home from '@/pages'
+import About from '@/pages/about'
+import Challenges from '@/pages/challenges'
+import SingleChallenge from '@/pages/challenges/challenge'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import RootLayout from './RootLayout'
-import Home from './pages'
-import About from './pages/about'
-import Challenges from './pages/challenges'
-import SingleChallenge from './pages/challenges/challenge'
 
 const App = () => (
   <BrowserRouter>

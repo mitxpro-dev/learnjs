@@ -1,4 +1,3 @@
-'use client'
 import { Text, VStack } from '@chakra-ui/react'
 
 export default function About() {

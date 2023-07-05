@@ -1,7 +1,7 @@
+import { Footer } from '@/components/Footer'
+import { Navigation } from '@/components/Navigation'
 import { Box, Center } from '@chakra-ui/react'
 import { Outlet } from 'react-router-dom'
-import { Footer } from './components/Footer'
-import { Navigation } from './components/Navigation'
 
 const RootLayout = () => (
   <>

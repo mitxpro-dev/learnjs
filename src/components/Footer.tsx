@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <Flex justify='center'>
       <Text fontSize='xs'>
-        Copyright &copy; {currentYear} MIT xPRO Development Group{' '}
+        Copyright &copy; {currentYear} MIT xPRO Development Group
       </Text>
     </Flex>
   )

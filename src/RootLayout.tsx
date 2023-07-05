@@ -1,0 +1,18 @@
+import { Box, Center } from '@chakra-ui/react'
+import { Outlet } from 'react-router-dom'
+import { Footer } from './components/Footer'
+import { Navigation } from './components/Navigation'
+
+const RootLayout = () => (
+  <>
+    <Navigation />
+    <Center w='full'>
+      <Box p={0} maxW='1440px' overflow='hidden'>
+        <Outlet />
+      </Box>
+    </Center>
+    <Footer />
+  </>
+)
+
+export default RootLayout

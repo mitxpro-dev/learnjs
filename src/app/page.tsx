@@ -1,9 +1,9 @@
 'use client'
 import { Heading, Text, Box } from '@chakra-ui/react'
-
-export default function Home() {
-  const imgUrl =
+const imgUrl =
     'url(https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&w=1440=&q=80)'
+    
+export default function Home() {
 
   const outerBoxStyles = {
     display: 'flex',

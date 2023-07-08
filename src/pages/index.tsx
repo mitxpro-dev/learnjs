@@ -1,4 +1,6 @@
 import { Box, Heading, Text } from '@chakra-ui/react'
+const imgUrl =
+  'url(https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&w=1440=&q=80)'
 
 export default function Home() {
   const outerBoxStyles = {
@@ -8,8 +10,7 @@ export default function Home() {
     width: '100vw',
     height: '90vh',
     p: '25',
-    background:
-      'linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80) center/cover no-repeat',
+    background: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), ${imgUrl} center/cover no-repeat`,
   }
 
   const innerBoxStyles = {

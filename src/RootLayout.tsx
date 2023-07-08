@@ -7,7 +7,7 @@ const RootLayout = () => (
   <>
     <Navigation />
     <Center w='full'>
-      <Box p={0} maxW='1440px' overflow='hidden'>
+      <Box p={0} maxW='1440px' overflow='hidden' w='full'>
         <Outlet />
       </Box>
     </Center>

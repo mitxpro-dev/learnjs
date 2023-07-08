@@ -7,7 +7,7 @@ export default function Home() {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    width: '100vw',
+    width: '100%',
     height: '90vh',
     p: '25',
     background: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), ${imgUrl} center/cover no-repeat`,

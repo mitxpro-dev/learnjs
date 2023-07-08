@@ -93,6 +93,7 @@ export const Navigation = () => {
           ) : null}
         </Box>
       </Box>
+      <Box h={12} pos='relative' pointerEvents='none' />
     </>
   )
 }

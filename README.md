@@ -2,7 +2,7 @@
 
 ## About
 
-This application, using `NextJS`, provides users the ability to complete coding challenges and learn more about specific, common problems that arise in software development.
+This application provides users the ability to complete coding challenges and learn more about specific, common problems that arise in software development.
 
 The main goal of this project is to assist new developers in preparing for common challenges they will encounter when entering the software development industry and building production-level software.
 
@@ -49,34 +49,11 @@ Run the development server:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-## Next Images
-
-Since this repo is currently deploying to `gh-pages`, assets must be placed in the `/public` folder and `src` should use the full url.
-
-Example:
-
-```
-<Image
-  className={styles.logo}
-  src="https://mitxpro-dev.github.io/learnjs/next.svg"
-  alt="Next.js Logo"
-  width={180}
-  height={37}
-/>
-```
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
 
 ## Learn More
 
 - [Branch Name Conventions](https://dev.to/varbsan/a-simplified-convention-for-naming-branches-and-commits-in-git-il4)
-- [Project Structure](https://nextjs.org/docs/getting-started/project-structure)
-- [Deploy on GH Pages](https://www.viget.com/articles/host-build-and-deploy-next-js-projects-on-github-pages/)
-- This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Vite.js](https://vitejs.dev/guide/)
+- [React Markdown](https://www.copycat.dev/blog/react-markdown/)
+- [React Icons](https://react-icons.github.io/react-icons/)

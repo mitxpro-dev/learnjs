@@ -1,4 +1,3 @@
-'use client'
 import { Box, Heading, Text, VStack } from '@chakra-ui/react'
 
 interface AboutSection {
@@ -42,7 +41,9 @@ export default function About() {
             {title}
           </Heading>
           {Array.isArray(text) ? (
-            text.map((textElement, i) => <Text key={`about-subsection-${title}#${i}`}>{textElement}</Text>)
+            text.map((textElement, i) => (
+              <Text key={`about-subsection-${title}#${i}`}>{textElement}</Text>
+            ))
           ) : (
             <Text>{text}</Text>
           )}

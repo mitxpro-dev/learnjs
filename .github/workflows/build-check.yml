@@ -1,28 +1,22 @@
-# https://www.viget.com/articles/host-build-and-deploy-next-js-projects-on-github-pages/
-
-name: Node.js CI
+name: Run CI Check
 
 on:
   pull_request:
+    types: [opened, reopened, synchronize]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-      # https://github.com/actions/checkout
       - uses: actions/checkout@v3
-        
-      # https://github.com/actions/setup-node
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: npm
-
+      - name: Install Deps
+        run: npm ci
+      - name: Lint
+        run: npm run lint
       - name: Build
-        run: |
-          npm ci
-          npm run build
-          npm run export
-          touch out/.nojekyll
+        run: npm run build

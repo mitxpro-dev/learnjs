@@ -6,7 +6,7 @@ import SingleChallenge from '@/pages/challenges/challenge'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename='/learnjs'>
     <Routes>
       <Route path='/' element={<RootLayout />}>
         <Route path='/challenges'>

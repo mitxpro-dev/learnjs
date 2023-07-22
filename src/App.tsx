@@ -3,10 +3,10 @@ import Home from '@/pages'
 import About from '@/pages/about'
 import Challenges from '@/pages/challenges'
 import SingleChallenge from '@/pages/challenges/challenge'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 
 const App = () => (
-  <BrowserRouter basename={import.meta.env.BASE_URL}>
+  <HashRouter basename={import.meta.env.BASE_URL}>
     <Routes>
       <Route path='/' element={<RootLayout />}>
         <Route path='/challenges'>
@@ -17,7 +17,7 @@ const App = () => (
         <Route index element={<Home />} />
       </Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 )
 
 export default App

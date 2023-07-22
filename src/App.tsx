@@ -6,7 +6,7 @@ import SingleChallenge from '@/pages/challenges/challenge'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 
 const App = () => (
-  <HashRouter basename={import.meta.env.BASE_URL}>
+  <HashRouter>
     <Routes>
       <Route path='/' element={<RootLayout />}>
         <Route path='/challenges'>

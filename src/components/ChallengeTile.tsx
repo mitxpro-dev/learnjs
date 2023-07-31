@@ -12,7 +12,7 @@ import {
   Heading,
 } from '@chakra-ui/react'
 import { NavLink } from '@/components/NavLink'
-import ChallengeProps from '@/pages/challenges/challengeProps'
+import ChallengeProps from '@/types/challengeProps'
 
 export const ChallengeTile = ({
   title,
@@ -81,7 +81,7 @@ export const ChallengeTile = ({
       </HStack>
 
       <CardFooter>
-        <NavLink href={`/${title.replace(/\s/g, '%20')}`}>
+        <NavLink href={`/challenges/${title.replace(/\s/g, '-')}`}>
           <Button>VIEW</Button>
         </NavLink>
       </CardFooter>

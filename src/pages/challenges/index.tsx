@@ -1,6 +1,6 @@
 import { Text, VStack, Grid, GridItem } from '@chakra-ui/react'
-import { ChallengeTile } from './ChallengeTile'
-import ChallengeProps from './challengeProps'
+import { ChallengeTile } from '../../components/ChallengeTile'
+import ChallengeProps from '../../types/challengeProps'
 
 const challengesData: ChallengeProps[] = [
   {

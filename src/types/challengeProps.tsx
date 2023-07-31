@@ -4,5 +4,5 @@ export default interface ChallengeProps {
   image: string
   description: string
   level: 'Easy' | 'Medium' | 'Hard'
-  topics: string[] | undefined
+  topics?: string[]
 }

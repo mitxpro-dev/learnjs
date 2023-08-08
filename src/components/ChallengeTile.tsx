@@ -1,6 +1,5 @@
 import {
   Flex,
-  Box,
   Button,
   Text,
   Stack,
@@ -8,80 +7,44 @@ import {
   CardBody,
   CardFooter,
   Image,
-  HStack,
   Heading,
 } from '@chakra-ui/react'
 import { NavLink } from '@/components/NavLink'
-import ChallengeProps from '@/types/challengeProps'
+import ChallengeProps from '@/types/ChallengeProps'
 
 export const ChallengeTile = ({
-  title,
+  name,
   image,
   description,
-  level,
-  topics,
+  difficulty,
+  slug,
 }: ChallengeProps) => {
   return (
     <Card maxW='sm' h='100%' _hover={{ boxShadow: '4px 4px 7px 0px #718096' }}>
       <CardBody>
-        <Image src={image} alt={title} borderRadius='lg' />
+        <Image src={image} alt={name} borderRadius='lg' />
         <Stack mt='6' spacing='3'>
           <Flex alignItems='center' justifyContent='space-between'>
-            <Heading size='md'>{title}</Heading>
+            <Heading size='md'>{name}</Heading>
             <Text
               color={
-                level === 'Easy'
+                difficulty === 1
                   ? 'green.600'
-                  : level === 'Medium'
+                  : difficulty === 2
                   ? 'orange.300'
                   : 'red.400'
               }
               fontSize='2xl'
             >
-              {level}
+              {difficulty == 1 ? 'Easy' : difficulty == 2 ? 'Medium' : 'Hard'}
             </Text>
           </Flex>
 
           <Text>{description}</Text>
         </Stack>
       </CardBody>
-      <HStack spacing='5px' ml='24px'>
-        {topics?.map((top, id) => {
-          return (
-            <Box
-              key={id}
-              as='button'
-              height='24px'
-              lineHeight='1.2'
-              transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
-              border='1px'
-              px='8px'
-              borderRadius='2px'
-              fontSize='14px'
-              fontWeight='semibold'
-              bg='#f5f6f7'
-              borderColor='#ccd0d5'
-              marginRight='4px'
-              color='#4b4f56'
-              _hover={{ bg: '#ebedf0' }}
-              _active={{
-                bg: '#dddfe2',
-                transform: 'scale(0.98)',
-                borderColor: '#bec3c9',
-              }}
-              _focus={{
-                boxShadow:
-                  '0 0 1px 2px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15)',
-              }}
-            >
-              {top}
-            </Box>
-          )
-        })}
-      </HStack>
-
       <CardFooter>
-        <NavLink href={`/challenges/${title.replace(/\s/g, '-')}`}>
+        <NavLink href={`/challenges/${slug}`}>
           <Button>VIEW</Button>
         </NavLink>
       </CardFooter>

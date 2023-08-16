@@ -20,7 +20,7 @@ export const ChallengeTile = ({
   difficulty,
   slug,
 }: ChallengeProps) => {
-  const colorForDifficulty: { [key in DifficultyLevel]: string } = {
+  const colorForDifficulty: { [key: number]: string } = {
     [DifficultyLevel.Easy]: 'green.600',
     [DifficultyLevel.Medium]: 'orange.300',
     [DifficultyLevel.Hard]: 'red.400',
@@ -33,7 +33,7 @@ export const ChallengeTile = ({
         <Stack mt='6' spacing='3'>
           <Flex alignItems='center' justifyContent='space-between'>
             <Heading size='md'>{name}</Heading>
-            {difficulty !== undefined && (
+            {difficulty !== null && (
               <Text color={colorForDifficulty[difficulty]} fontSize='2xl'>
                 {DifficultyLevel[difficulty]}
               </Text>

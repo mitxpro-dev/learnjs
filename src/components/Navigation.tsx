@@ -47,6 +47,7 @@ export const Navigation = () => {
         position='fixed'
         px={4}
         w='100%'
+        zIndex={1}
       >
         <Box maxW='1440px' margin='auto'>
           <Flex h={12} alignItems={'center'} justifyContent={'space-between'}>
